@@ -1,0 +1,25 @@
+body{
+    background-color: antiquewhite;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    font: normal 11pt arial;
+    background: rgb(248, 248, 248);
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    width: 500px;
+    height: auto;
+    box-shadow: 5px 5px 5px rgb(209, 209, 209);
+}
+
+footer{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}

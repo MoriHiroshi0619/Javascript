@@ -1,0 +1,30 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width= , initial-scale=1.0">
+      <title>ex004</title>
+
+      <style>
+        body {
+          font: normal 20px arial;
+        }
+      </style>
+
+  </head>
+ 
+  <body>
+    <script>
+      var nome = window.prompt("digite seu nome");
+      document.write(`olá ${nome}, seu nome tem ${nome.length} <br/>`); //nome.length tipo um strlen do C e <br/> pula linha
+      document.write(`seu nome em maisculos fica ${nome.toUpperCase()}<br/>`); //metodo para deixar string em maisculo
+      document.write(`seu nome mudando as letras 'i' por 'a' = ${nome.replace('i', 'a')}`);
+      /*n1.toFixed(inteiro)*/ // comando para mostrar ate onde sera mostrando os numeros depois da ',' 
+      // variavel.replace(' ', ' ') substitui um caracter por outro em uma string
+      /*n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})*/ //comando simples para conversao em dinheiro de uma string
+    </script>
+  </body>
+
+  </html>

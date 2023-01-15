@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESAFIO001</title>
+
+  <style>
+    h1{
+      font: normal 20pt arial;
+    }
+     
+  </style>
+</head>
+<body>
+  <h1>DESAFIO: ->países<-</h1>
+  digite o pais aonde voce mora: <input type="text" id="txtpais" name="txtpais">
+  <input type="button" value="confirmar" onclick="clicou()">
+  <div id="res"></div>
+
+  <script>
+    var txtpais = window.document.getElementById('txtpais');
+    var res = window.document.querySelector('div#res');
+
+    function clicou(){
+      var pais = txtpais.value;
+      res.innerHTML = `<p>vivendo em <strong>${pais}</strong></p>`;
+      if(pais.toLowerCase() == 'brasil'){
+        res.innerHTML += `<p>voce é brasileiro</p>`;
+      }else if(pais.toLowerCase() == 'eua' || pais.toLowerCase() == 'america'){
+        res.innerHTML += `<p>voce é <strong>Americano</strong></p>`;
+      }else{
+        res.innerHTML += `<p>voce é <strong>estrangeiro</strong></p>`;
+      }
+
+      //res.innerHTML += `<p>${pais}</p>`;
+    }
+    
+  </script>
+</body>
+</html>

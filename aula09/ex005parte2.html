@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex005 pt 2</title>
+
+  <style>
+    body {
+      background-color: rgb(68, 125, 199);
+      color: white;
+      font: normal 18pt arial;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>iniciando os estudos em DOM</h1>
+  <p>aqui vai o resultado</p>
+  <p id = "p2">aprendendo a usar <strong>DOM</strong> com javaScript</p>
+  <p>ola mundo</p>
+  <div id = "msg">clique em mim</div>
+
+
+  <script>
+    var corpo = window.document.body;
+    var p = window.document.getElementById('p2');
+    var d = window.document.getElementById('msg');
+    
+    d.style.backgroundColor = 'green';
+    d.innerText = 'agora eu mudei o texto';
+    p.innerText = 'mudei o segundo paragrafo';
+    corpo.style.backgroundColor = 'agua';
+
+  </script>
+</body>
+
+</html>

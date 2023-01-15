@@ -1,0 +1,58 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width= , initial-scale=1.0">
+      <title>ex003</title>
+      <style>
+          body {
+              background-color: rgb(251, 252, 252);
+          }
+
+          h1 {
+              color: rgb(219, 5, 5);
+              font-size: 40px;
+              font-style: italic;
+              font-family: 'Times New Roman', Times, serif;
+          }
+
+          p {
+            color: rgb(1, 12, 22);
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif; 
+          }
+
+          p1 {
+            font-style: oblique;
+            font-size: 22px;
+          }
+
+      </style>
+  </head>
+ 
+  <body>
+      <h1>ola, mundo</h1> <!-- isso é um comentario em html--> 
+      <p>fiz o que todo mundo sempre faz</p>
+      <p1>
+          esse é meu segundo paragrafo pulei uma linha agora automaticamente sqn.
+      </p1>
+      <script>
+          var n1 = parseInt(window.prompt("digite um numero "));
+          /*var n1 = Number(window.prompt("digite um numero "))*/ //uma segunda opcao
+          var n2 = parseInt(window.prompt("digite um segundo numero"));
+          var soma = n1 + n2;
+
+            //convertendo number para string -> String(s);
+
+          //window.alert("a soma dos dos dois numeros = " + soma);
+
+          //outra forma de exibir testo formatado no javascript
+
+          window.alert(`a soma de ${n1} e ${n2} é igual a ${soma}`);
+
+      </script>
+  </body>
+
+  </html>
